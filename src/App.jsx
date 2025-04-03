@@ -11,9 +11,7 @@ function App() {
     <div className="App">
 
       
-      <Hero />
-
-
+      <h1>Hello World</h1>
 
 
 
