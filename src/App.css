@@ -16,7 +16,7 @@ body {
   
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("images/flowers/bg1_grey.png");
+  background-image: url("images/flowers/bg1_green.png");
   background-position: center top 400px; /* Moves the background image down by 300px */
   background-repeat: no-repeat;
   background-size: cover;   
