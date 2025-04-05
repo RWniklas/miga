@@ -1,0 +1,16 @@
+.devider-container {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    text-align: center; /* Centers the text */
+    padding: 1rem 0; /* Adds vertical padding */
+    font-size: 1.2rem; /* Adjusts the text size */
+    
+    
+   
+  }
+
+.ped {
+  padding-top:100px;
+  padding-bottom: 100px;
+  
+}
