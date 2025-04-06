@@ -1,31 +1,36 @@
 #root {
-  
-  margin: 0 auto;
-  line-height: 1.5;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  
-  /* display: flex;
+    /* display: flex;
   place-items: center; */
-  padding-top: 270px;
-  
-  min-width: 320px;
-  min-height: 100vh;
-  background-image: url("images/flowers/bg1_green.png");
-  background-position: center top 400px; /* Moves the background image down by 300px */
-  background-repeat: no-repeat;
-  background-size: cover;   
-  font-family: "myfont"; 
+    padding-top: 270px;
+
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url("images/flowers/bg1_green.png");
+    background-position: center top 400px; /* Moves the background image down by 300px */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "NeueMontreal", sans-serif;
 }
 
 @font-face {
-  font-family: 'myfont'; 
-  src: url('./font.otf') format('opentype'); 
-  font-weight: normal; 
-  font-style: normal; 
+    font-family: "NeueMontreal";
+    src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("/fonts/NeueMontreal-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
 }
