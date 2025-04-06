@@ -1,5 +1,5 @@
 #root {
-  
+
   margin: 0 auto;
   line-height: 1.5;
   font-weight: 400;
@@ -9,23 +9,24 @@
 }
 
 body {
-  
+
   /* display: flex;
   place-items: center; */
-  padding-top: 270px;
-  
+  /* padding-top: 270px; */
+
   min-width: 320px;
   min-height: 100vh;
   background-image: url("images/flowers/bg1_green.png");
-  background-position: center top 400px; /* Moves the background image down by 300px */
+  background-position: center top 400px;
+  /* Moves the background image down by 300px */
   background-repeat: no-repeat;
-  background-size: cover;   
-  font-family: "myfont"; 
+  background-size: cover;
+  font-family: "myfont";
 }
 
 @font-face {
-  font-family: 'myfont'; 
-  src: url('./font.otf') format('opentype'); 
-  font-weight: normal; 
-  font-style: normal; 
+  font-family: 'myfont';
+  src: url('./font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
