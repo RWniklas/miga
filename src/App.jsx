@@ -1,5 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import React from "react";
 
@@ -9,6 +8,7 @@ import Devider from "./components/Devider/devider.jsx";
 import Info from "./components/Info/info.jsx";
 import Carusell from "./components/carusell/carusell.jsx";
 import Header from "./components/Header/header.jsx";
+import Footer from "./components/Footer/footer.jsx";
 
 import "./App.css";
 function App() {
@@ -23,6 +23,7 @@ function App() {
             <Info />
             <Devider />
             <Carusell />
+            <Footer />
         </>
     );
 }
