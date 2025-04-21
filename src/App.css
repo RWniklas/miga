@@ -10,27 +10,21 @@
 body {
     /* display: flex;
   place-items: center; */
-    padding-top: 270px;
+    /* padding-top: 270px; */
 
     min-width: 320px;
     min-height: 100vh;
     background-image: url("images/flowers/bg1_green.png");
-    background-position: center top 400px; /* Moves the background image down by 300px */
+    background-position: center top 400px;
+    /* Moves the background image down by 300px */
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "NeueMontreal", sans-serif;
+    font-family: "myfont";
 }
 
 @font-face {
-    font-family: "NeueMontreal";
-    src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+    font-family: "myfont";
+    src: url("./font.otf") format("opentype");
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "NeueMontreal";
-    src: url("/fonts/NeueMontreal-Bold.otf") format("opentype");
-    font-weight: bold;
     font-style: normal;
 }
