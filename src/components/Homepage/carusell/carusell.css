@@ -1,0 +1,53 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* Swiper images */
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay text block */
+.carousel-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 80%;
+}
+
+/* Headline */
+.carousel-text-overlay h1 {
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* CTA Button */
+.carousel-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffffcc;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #ffffffee;
+}

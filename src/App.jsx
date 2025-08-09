@@ -1,30 +1,26 @@
-import { useState } from "react";
-import "./App.css";
-import React from "react";
+import { Routes, Route, NavLink } from "react-router-dom";
+import Home from "./pages/home.jsx";
+import Values from "./pages/values.jsx";
+import Archive from "./pages/archive.jsx";
+import Services from "./pages/services.jsx";
+import Contact from "./pages/contact.jsx";
 
-import Hero from "./components/Hero/Hero.jsx";
-import About from "./components/About/about.jsx";
-import Devider from "./components/Devider/devider.jsx";
-import Info from "./components/Info/info.jsx";
-import Carusell from "./components/carusell/carusell.jsx";
-import Header from "./components/Header/header.jsx";
-import Footer from "./components/Footer/footer.jsx";
+import Header from "./components/SharedElements/Header/header.jsx";
 
 import "./App.css";
+
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <>
+        <div>
             <Header />
-            <Hero />
-            <About />
-            <Devider />
-            <Info />
-            <Devider />
-            <Carusell />
-            <Footer />
-        </>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/values" element={<Values />} />
+                <Route path="/archive" element={<Archive />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </div>
     );
 }
 

@@ -4,11 +4,8 @@
     padding-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
-    
-    
-    
-  }
-  .info-box-display {
+}
+.info-box-display {
     background-color: white;
     width: 450px;
     height: 600px;
@@ -16,33 +13,28 @@
     border: 1px solid black; /* Border around the entire wrapper */
     overflow-y: auto; /* Enables vertical scrolling */
     overflow-x: hidden; /* Prevents horizontal scrolling */
-  }
-  .info-box {
+}
+.info-box {
     width: 450px;
     height: 600px;
     position: relative;
-   
-  }
-
+}
 
 .first-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
-  }
+}
 
 .second-image {
     width: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
     position: absolute;
-    left : 50%;
-  }
+    left: 50%;
+}
 
-
-
-  .title {
+.title {
     position: absolute;
     padding-left: 5%;
     left: 0;
@@ -50,62 +42,58 @@
     top: 65%;
     font-weight: bold;
     font-size: 2rem;
-    
-    
-  }
+}
 
-  .subtitle {
+.subtitle {
     position: absolute;
     padding-left: 5%;
     left: 0;
     top: 72%;
     width: 90%;
-    
-    
-  }
+}
 
-
-  .number {
+.number {
     position: absolute;
     padding-left: 5%;
     left: 0;
     top: 27%;
     font-weight: bold;
     font-size: 2rem;
-  }
-  .arrow {
+}
+.arrow {
     position: absolute;
     padding-left: 5%;
     left: 0;
     top: 2%;
     font-weight: bold;
     font-size: 3rem;
-  }
+}
 
-  .bannerImage {
+.bannerImage {
     position: absolute;
     top: 240px; /* Centers vertically */
     left: 48%; /* Centers horizontally */
     transform: translate(-50%, -50%); /* Adjusts for the element's own dimensions */
     width: 89%; /* Adjust the width as needed */
-    
-  }
-  .bannerText   {
-    
+}
+.bannerText {
     position: absolute;
     padding-left: 5%;
     top: 480px;
     right: 10%;
     font-size: 1.2rem;
-    
-  }
+}
 
-  .third-image {
+.third-image {
     position: absolute;
     top: 866px; /* Centers vertically */
     left: 48%; /* Centers horizontally */
     transform: translate(-50%, -50%); /* Adjusts for the element's own dimensions */
     width: 100%; /* Adjust the width as needed */
-  }
+}
 
- 
+@media screen and (max-width: 768px) {
+    .info-container {
+        display: none;
+    }
+}

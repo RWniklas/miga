@@ -1,15 +1,18 @@
 import React from "react";
 import "./Header.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate();
+
     return (
         <header className="container-fluid pb-3">
             <div className="row align-items-start align-items-md-center">
                 {/* Left: Logo + Slogan */}
                 <div className="col-md-6 d-flex flex-column flex-md-row align-items-start gap-3">
                     <div className="d-flex flex-column">
-                        <img className="header-logo" src="images/textlogo.png" alt="Migarden" />
-                        <div className="d-flex ;">
+                        <img className="header-logo" src="images/textlogo.png" alt="Migarden" onClick={() => navigate("/")} style={{ cursor: "pointer" }} />
+                        <div className="d-flex">
                             <hr className="logo-line" />
                             <p className="text-muted slogan-text ml-1">the green place in a gray space</p>
                         </div>
@@ -28,19 +31,19 @@ const Header = () => {
                 <nav className="col-md-6 d-flex justify-content-md-end mt-3 mt-md-0 border-start ps-4">
                     <ul className="nav">
                         <li className="nav-item">
-                            <a className="nav-link fw-semibold" href="#">
+                            <NavLink className="nav-link fw-semibold" to="/values">
                                 Values
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link fw-semibold" href="#">
+                            <NavLink className="nav-link fw-semibold" to="/archive">
                                 Archive
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link fw-semibold" href="#">
+                            <NavLink className="nav-link fw-semibold" to="/services">
                                 Studios
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>

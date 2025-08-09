@@ -1,7 +1,7 @@
 import React from "react";
-import "./about.css"; // External styles
+import "./hero.css";
 
-function About() {
+function Hero() {
     return (
         <div className="about-container">
             {/* Left Section */}
@@ -20,18 +20,16 @@ function About() {
             <div className="about-right">
                 <h3 className="founded-subtitle">about</h3>
                 <h1 className="about-title">
-                    <b>Fondata nel 2021</b>
+                    <b>Fondata nel 2021,</b>
                 </h1>
                 <p className="founded-text">
                     <b>Migarden</b> è un’associazione di promozione sociale che si dedica all'organizzazione e alla promozione di eventi culturali dinamici e innovativi, progettati per riappropriarsi socialmente e attivamente degli spazi naturali
-                    all'interno di contesti urbani.
-                    <br></br>
-                    L’attività principale della <b>associazione</b> è stata la produzione e l’organizzazione di <b>eventi culturali</b>, mezzo di propagazione del nostro <b>impegno sociale</b>, culturale e artistico che ci ha permesso di{" "}
-                    <b>collaborare</b> ed entrare in contatto con importanti luoghi, persone e istituzioni del territorio di Milano e non solo.
+                    all'interno di contesti urbani.\ L’attività principale della <b>associazione</b> è stata la produzione e l’organizzazione di <b>eventi culturali</b>, mezzo di propagazione del nostro <b>impegno sociale</b>, culturale e artistico
+                    che ci ha permesso di <b>collaborare</b> ed entrare in contatto con importanti luoghi, persone e istituzioni del territorio di Milano e non solo.
                 </p>
             </div>
         </div>
     );
 }
 
-export default About;
+export default Hero;
