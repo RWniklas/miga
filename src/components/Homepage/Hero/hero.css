@@ -1,36 +1,80 @@
-.hero-box {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    aspect-ratio: 3 / 4;
-    height: 100%;
+.homehero-container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-top: 300px;
+    padding-bottom: 100px;
 }
 
-.hero-img {
-    flex: 0 0 80%;
+/* Make every tile a clean square; crop without distortion */
+.homehero-img {
+    display: block;
     width: 100%;
+    aspect-ratio: 1 / 1; /* squares */
+    object-fit: cover;
+    border: 0; /* no rounded edges or extra styling */
+}
+
+/* Simple card: image on top, label below */
+.hero-box {
+    border: 1px solid #000; /* keep or remove as you like */
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
-.hero-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .hero-label {
-    flex: 0 0 20%;
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 1.9rem;
-    font-weight: bold;
-    padding: 0 0.75rem;
-    border-top: 1px solid black;
-    background-color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    border-top: 1px solid #000;
+    background: #fff;
+}
+.shift-up {
+    position: relative;
+    top: -88%;
+}
+.shift-down {
+    position: relative;
+    bottom: -88%;
+}
+/* plus icon style (simple, you can tweak size/color later) */
+.plus-wrap {
+    position: relative;
 }
 
-.equal-cols > .col {
-    flex: 0 0 calc(100% / 7);
-    max-width: calc(100% / 7);
+/* Overlayed plus (doesn't affect layout) */
+.hero-plus {
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    transform: translateY(-50%);
+    font-size: 2rem; /* tweak size */
+    line-height: 1;
+    pointer-events: none; /* clicks pass through */
 }
+.intro-block {
+    display: none;
+}
+@media (max-width: 767.98px) {
+    .homehero-container {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .intro-block {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        display: block;
+        line-height: 1;
+        padding-top: 30px;
+    }
+}
+
+/* Place plus at the column edges, nudged into the gap */

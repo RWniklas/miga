@@ -5,15 +5,15 @@
     line-height: 1.2;
     padding-left: 5%;
     padding-right: 5%; /* Adds padding to the left and right sides */
-    padding-left: 5%; /* Adds padding to the bottom */
 }
 
 .about-left {
-    padding-top: 50px; /* Adds padding to the top of the left section */
+    padding-top: 100px; /* Adds padding to the top of the left section */
     max-width: 30%; /* Limits the width of the left section */
 }
 
 .about-right {
+    padding-right: 40px;
     position: relative;
     max-width: 55%; /* Limits the width of the right section */
 }
@@ -23,78 +23,73 @@
 }
 
 .mission-description {
-    font-size: 1.5rem; /* Adjusts the size of the description text */
+    padding-right: 90px;
+    font-size: 1.7rem; /* Adjusts the size of the description text */
     margin-bottom: 1rem; /* Adds spacing between paragraphs */
-}
-
-.about-button {
-    display: inline-block; /* Ensures the button behaves like a block element */
-    padding: 0.5rem 1.5rem; /* Adds padding inside the button */
-    font-size: 1rem; /* Adjusts the font size */
-    cursor: pointer; /* Changes the cursor to a pointer */
-    border: 2px solid black; /* Adds a solid black border */
-    border-radius: 30px; /* Makes the border rounded */
-    background-color: transparent; /* Makes the background transparent */
-    color: black; /* Sets the text color to black */
-
-    font-weight: bold; /* Makes the text bold */
-    transition: all 0.3s ease; /* Adds a smooth transition for hover effects */
-}
-
-.about-button:hover {
-    background-color: black; /* Changes the background color on hover */
-    color: white; /* Changes the text color on hover */
 }
 
 .founded-subtitle {
     position: absolute; /* Allows precise positioning relative to .about-right */
-    top: 5%; /* Aligns the subtitle with the top of the container */
-    left: -60px; /* Moves the subtitle to the left of the main heading */
+    top: 4%; /* Aligns the subtitle with the top of the container */
+    left: -80px; /* Moves the subtitle to the left of the main heading */
     font-size: 1.5rem; /* Adjusts the size of the "about" subtitle */
 }
 
 .founded-text {
-    font-size: 1.85rem; /* Adjusts the size of the text */
+    font-size: 2.7rem; /* Adjusts the size of the text */
     margin-bottom: 0.5rem; /* Adds spacing between paragraphs */
+}
+.about-arrow {
+    padding-top: 30px;
+    font-size: 4rem; /* Adjusts the size of the arrow */
+    color: #000; /* Adjusts the color of the arrow */
 }
 
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
-        padding-top: 80px;
-        margin-bottom: 80px;
+        padding-top: 30px;
+        margin-bottom: 30px;
         gap: 2rem;
+        padding-right: 0;
     }
 
     .about-left {
         display: none;
     }
-
+    .about-arrow {
+        display: none;
+    }
     .about-right {
         max-width: 100%;
+        padding-right: 0;
     }
 
     .about-title {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
         font-weight: bold;
     }
 
     .founded-subtitle {
         position: relative;
         left: 0;
-        font-size: 3rem;
+        font-size: 2.2rem;
         margin-bottom: 0.25rem;
         display: block;
         font-weight: bold;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
     .founded-subtitle::first-letter {
         text-transform: uppercase;
     }
+    .nel2021 {
+        font-size: 1.6rem;
+    }
 
     .founded-text {
-        font-size: 2rem;
+        padding-top: 7px;
+        font-size: 1.5rem;
         line-height: 1.2;
         width: 85%;
     }

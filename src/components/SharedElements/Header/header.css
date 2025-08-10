@@ -1,7 +1,3 @@
-header {
-    margin-top: 3px;
-}
-
 .logo-text {
     font-size: 2.5rem;
     font-weight: 900;
@@ -9,7 +5,7 @@ header {
 }
 
 header {
-    margin-bottom: 170px !important;
+    margin-top: 3px;
 }
 
 .header-logo {
@@ -58,4 +54,22 @@ nav {
 .nav-item:nth-child(3) .nav-link {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.mobile {
+    display: none;
+}
+@media (max-width: 767.98px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+    .header-logo {
+        width: 100%;
+    }
+    .right-links {
+        padding-right: 30px;
+    }
 }

@@ -1,0 +1,123 @@
+/* Desktop */
+.archive-desktop {
+    background: url("images/flowers/bg2_grey.png") center / cover no-repeat;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 300px;
+}
+.ar-title-des {
+    font-weight: 700;
+    font-size: 5rem;
+}
+.media-xl {
+    padding-top: 150px;
+}
+
+.ar-text-des {
+    font-size: 2.6rem;
+    line-height: 1;
+    font-weight: bold;
+}
+.ar-text-des2 {
+    font-size: 2.6rem;
+    line-height: 1;
+}
+.des-button {
+    padding: 1.75rem 2.5rem;
+    background-color: #d3d4d6;
+    color: #000;
+    font-size: 2.6rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.des-button:hover {
+    background-color: #ffffffee;
+}
+/* Mobile */
+.pad-t {
+    padding-top: 150px;
+}
+.pad-t2 {
+    padding-top: 220px;
+}
+.pad-b {
+    padding-bottom: 300px;
+}
+
+.a-section {
+    background: url("images/homepage/miarchive.png") center / cover no-repeat;
+    color: white;
+}
+.a-section2 {
+    background-color: #000;
+    color: aliceblue;
+}
+
+.at-number {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 0.5;
+    padding-left: 20px;
+}
+
+.at-arrow {
+    font-size: 3rem;
+    padding-left: 20px;
+}
+
+.at-title {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.at-text {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 100;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.at-media {
+    width: 100%;
+}
+.at-off-media {
+    width: 70%;
+    padding-left: 10px;
+    margin-top: -110px;
+}
+.at-off-text {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 100;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: -110px;
+}
+.at-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* perfect centering */
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffffcc;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.archive-mobile {
+    display: none;
+}
+@media (max-width: 768px) {
+    .archive-mobile {
+        display: flex;
+    }
+    .archive-desktop {
+        display: none;
+    }
+}

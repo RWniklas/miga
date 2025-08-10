@@ -1,0 +1,139 @@
+/* Desktop */
+.values-desktop {
+    background: url("images/flowers/bg2_grey.png") center / cover no-repeat;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 300px;
+}
+.ar-title-des {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.ar-text-des {
+    font-size: 2.6rem;
+    line-height: 1;
+    font-weight: bold;
+}
+.ar-text-des2 {
+    font-size: 2.6rem;
+    line-height: 1;
+}
+.des-button {
+    padding: 1.75rem 2.5rem;
+    background-color: #d3d4d6;
+    color: #000;
+    font-size: 2.6rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.des-button:hover {
+    background-color: #ffffffee;
+}
+
+/* Mobile */
+.section1 {
+    background: url("images/flowers/bg2_grey.png") center / cover no-repeat;
+}
+
+.section2 {
+    background-color: #000;
+    color: aliceblue;
+}
+
+.b-spacer {
+    padding-bottom: 130px;
+}
+
+.t-spacer {
+    padding-top: 80px;
+}
+.ar-arrow {
+    position: absolute;
+    top: 37%; /* vertical midpoint of the row */
+    left: 40%; /* distance from left edge */
+    transform: translateY(-50%); /* perfectly center vertically */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between arrow and number */
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+/* Simple typographic helpers */
+.ar-title {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.ar-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.kicker {
+    position: absolute;
+    font-weight: 700;
+    font-size: 2rem;
+    top: 75%; /* vertical midpoint of the row */
+    padding-right: 10px;
+}
+
+/* Media */
+.media {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.media-big {
+    width: 100%;
+}
+.media-small {
+    width: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.media-xl {
+    width: 170%;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.center-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* perfect centering */
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffffcc;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.center-button:hover {
+    background-color: #ffffffee;
+}
+/* Optional: wrapper (kept empty so you can extend later) */
+.values {
+    display: none;
+}
+@media (max-width: 768px) {
+    .values {
+        display: flex;
+    }
+    .values-desktop {
+        display: none;
+    }
+}

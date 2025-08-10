@@ -1,7 +1,10 @@
+import React from "react";
+import Main from "../components/Values/valuesmain.jsx";
+
 export default function Values() {
     return (
-        <>
-            <h1>Values Page</h1>
-        </>
+        <div>
+            <Main />
+        </div>
     );
 }

@@ -1,53 +1,81 @@
+/* ---- Base / Desktop ---- */
 .carousel-container {
     position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9; /* desktop: proportional height */
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 0; /* sharp edges */
 }
 
-/* Swiper images */
-.carousel-container img {
+.carousel-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 0; /* ensure image isn’t rounded */
 }
 
-/* Overlay text block */
+/* Overlay */
 .carousel-text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #fff;
     text-align: center;
     z-index: 10;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 80%;
+    width: min(85%, 720px);
+    padding: clamp(12px, 3vw, 32px);
+    border-radius: 0; /* keep overlay box sharp too */
 }
 
-/* Headline */
+/* Headline scales smoothly */
 .carousel-text-overlay h1 {
-    font-size: 3rem;
-    line-height: 1.4;
+    font-size: clamp(1.6rem, 2.6vw + 0.6rem, 3rem);
+    line-height: 1.25;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin: 0 0 clamp(10px, 1.5vw, 16px);
 }
 
-/* CTA Button */
+/* Button: clean pill */
 .carousel-button {
-    padding: 0.75rem 1.5rem;
-    background-color: #ffffffcc;
+    padding: clamp(10px, 1.2vw, 14px) clamp(18px, 2.4vw, 24px);
+    background: #fff;
     color: #000;
-    font-weight: 500;
-    border: none;
-    border-radius: 8px;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    border: 2px solid #000;
+    border-radius: 999px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: filter 0.2s ease;
+}
+.carousel-button:hover {
+    filter: brightness(0.95);
 }
 
-.carousel-button:hover {
-    background-color: #ffffffee;
+/* ---- Mobile tweaks ---- */
+@media (max-width: 768px) {
+    .carousel-container {
+        aspect-ratio: auto; /* stop using ratio */
+        height: 60vh; /* use viewport height instead */
+        min-height: 320px; /* prevent tiny images on short screens */
+        border-radius: 0; /* ensure no rounding on mobile */
+    }
+
+    .carousel-text-overlay {
+        width: 88%;
+        padding: 16px;
+    }
+
+    .carousel-text-overlay h1 {
+        font-size: 1rem;
+        font-weight: 100; /* smaller headline on phones */
+        line-height: 1.3;
+    }
+
+    .carousel-button {
+        padding: 10px 18px;
+        font-size: 0.95rem;
+        font-weight: 100;
+        border-width: 1px;
+    }
 }

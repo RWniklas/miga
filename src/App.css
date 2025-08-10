@@ -1,10 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden; /* prevent unwanted horizontal scroll */
+    font-family: "NeueMontreal", sans-serif;
+}
+
+/* --- Fonts --- */
 @font-face {
     font-family: "NeueMontreal";
     src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: "NeueMontreal";
     src: url("/fonts/NeueMontreal-Bold.otf") format("opentype");
@@ -12,21 +23,48 @@
     font-style: normal;
 }
 
-body {
-    min-width: 320px;
-    min-height: 100vh;
-    background-image: url("images/flowers/bg1_green.png");
-    background-position: center top 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "NeueMontreal", sans-serif; /* Use the imported font */
-}
-
+/* --- Root element --- */
 #root {
-    margin: 0 auto;
     line-height: 1.5;
     font-weight: 400;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Page wrapper --- */
+.page {
+    position: relative;
+    isolation: isolate; /* z-index layering safety */
+    min-height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* --- Background layers --- */
+.bg-layer {
+    position: absolute; /* scrolls with content */
+    inset: 0;
+    background-image: url("/images/flowers/bg1_green.png");
+    background-position: center top 300px;
+    background-repeat: repeat;
+    background-size: cover;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.bg-under {
+    z-index: -1;
+    opacity: 1;
+}
+.bg-over {
+    z-index: 999;
+    opacity: 0.5;
+}
+
+/* --- Mobile adjustments --- */
+@media (max-width: 767.98px) {
+    .bg-layer {
+        background-position: center top -55px;
+    }
 }

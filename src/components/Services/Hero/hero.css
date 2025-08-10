@@ -1,0 +1,58 @@
+.hero-container {
+    padding-left: 15%;
+    padding-right: 10%;
+}
+.pad-l {
+    padding-left: 20px;
+}
+
+.hero-img-el {
+    display: block;
+    width: 100%;
+    height: auto; /* important: avoid forced height */
+}
+
+/* The middle spacer column */
+.hero-empty {
+    padding: 0;
+}
+
+.explain-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+
+    line-height: 1.1;
+}
+
+.explain-text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+    .hero-container {
+        padding: 0;
+        margin: 0;
+    }
+    .hero-title {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 900;
+
+        line-height: 1.1;
+    }
+
+    .hero-line {
+        padding-left: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    .hero-element {
+        padding-bottom: 25px;
+    }
+}

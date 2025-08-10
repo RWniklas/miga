@@ -1,8 +1,4 @@
+import Main from "../components/Contact/contact.jsx";
 export default function () {
-    Contact;
-    return (
-        <>
-            <h1>Contact Page</h1>
-        </>
-    );
+    return <Main />;
 }

@@ -1,7 +1,4 @@
+import Main from "../components/Archive/archivemain.jsx";
 export default function () {
-    return (
-        <>
-            <h1>Archive Page</h1>
-        </>
-    );
+    return <Main />;
 }

@@ -1,0 +1,26 @@
+.offer-container {
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-bottom: 150px;
+}
+
+/* Title */
+.offer-title {
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.offer-line {
+    font-size: 20px;
+    padding-left: 50px;
+    text-transform: uppercase;
+
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.offer-pd {
+    padding-left: 90px;
+}
+.offer-pd1 {
+    padding-left: 60px;
+}

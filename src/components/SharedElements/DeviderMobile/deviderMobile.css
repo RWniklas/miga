@@ -7,9 +7,9 @@
         background-color: black; /* Black background */
         color: white; /* White text color */
         text-align: center; /* Centers the text */
-        padding: 0.3rem; /* Adds vertical padding */
-        margin-top: 40px;
-        font-size: 1.2rem; /* Adjusts the text size */
+        padding: 0.2rem; /* Adds vertical padding */
+        margin-top: 20px;
+        font-size: 1rem; /* Adjusts the text size */
         display: block;
         text-align: left;
         padding-left: 50px;

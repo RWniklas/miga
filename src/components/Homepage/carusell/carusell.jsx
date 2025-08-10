@@ -1,18 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./carusell.css";
-import { ImageRotator } from "../functions/imageRotator"; // adjust path if needed
-
-const images = ["images/homepage/contact.png", "images/homepage/contact2.png"];
 
 function Carusell() {
+    const navigate = useNavigate();
+
     return (
         <div className="carousel-container">
-            <ImageRotator images={images} interval={4000} />
+            <img src="images/homepage/contact.png" alt="Dynamic Carousel" className="carousel-image" />
 
             {/* Overlay text and button */}
             <div className="carousel-text-overlay">
                 <h1>Transforms abandoned urban spaces into dynamic and vibrant places.</h1>
-                <button className="carousel-button">Contact us</button>
+                <button type="button" className="carousel-button" onClick={() => navigate("/contact")}>
+                    Contact us
+                </button>
             </div>
         </div>
     );
