@@ -1,6 +1,6 @@
 /* Desktop */
 .archive-desktop {
-    background: url("images/flowers/bg2_grey.png") center / cover no-repeat;
+    background: url("/images/flowers/bg2_grey.png") center / cover no-repeat;
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 300px;
@@ -47,7 +47,7 @@
 }
 
 .a-section {
-    background: url("images/homepage/miarchive.png") center / cover no-repeat;
+    background: url("/images/homepage/miarchive.png") center / cover no-repeat;
     color: white;
 }
 .a-section2 {
